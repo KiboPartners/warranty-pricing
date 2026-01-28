@@ -27,10 +27,20 @@ interface ApiContext {
   callChain: string;
 }
 
+export type OrderPriceOverrideData = {
+  overridePrice?: OverridePriceEntry[]
+}
+
+export type OverridePriceEntry = {
+  productCode: string;
+  overridePrice: number;
+}
+
 export type AddItemContext = {
   configuration:any,
   request: {
-    body: OrderItem
+    body: OrderItem,
+    params: any
   },
   response: {
     status: number,

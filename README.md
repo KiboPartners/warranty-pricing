@@ -29,7 +29,7 @@ Then go to your application in Dev Center, and click Install on your tenant. Thi
 
 1. Update the Extra Attribute name in `main.ts` 
 
-`      const warrantyPlu = body?.product?.options?.find((o) => o?.attributeFQN?.toLowerCase() == "tenant~warrantyType".toLowerCase())?.value`
+`const warrantyPlu = body?.product?.options?.find((o) => o?.attributeFQN?.toLowerCase() == "tenant~warrantyType".toLowerCase())?.value`
 
 2. Setup entity list
   ```
